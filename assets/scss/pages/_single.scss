@@ -1,0 +1,75 @@
+// banner Section
+
+.single-banner{
+   position: relative;
+   .gutter-spacious{
+      .spacing{
+         padding-top: 90px;
+         padding-bottom: 60px;
+         ul{
+            li{
+              a{
+               font-size: 18px;
+               font-weight: 600;
+               font-family: $primary__font;
+               color: linear-gradient(140deg, #D2A8FF 12.09%, #F778BA 42.58%, #FF7B72 84.96%) !important;
+              
+              }
+            }
+         }
+         .color-fg-default{
+            color: $default__color;
+            font-family: $secondary__font;
+            font-size: 48px ;
+            line-height: 52px;
+            letter-spacing: -0.03em;
+            font-weight: 800 ;
+         }
+         .banner-image{
+            .cover-image{
+               height: 100% t;
+               width: 100% ;
+               object-fit: cover;
+               left: 0;
+               top: 0;
+            }
+           
+         }
+      }
+
+   }
+   .img-position {
+      width: 100%;
+      bottom: 0px !important;
+      background-color: #ffff;
+      height: 80px;
+      margin-top: -80px;
+      margin-bottom: 80px;
+      
+   }
+
+
+}
+
+// single body section
+
+.card-single{
+   margin-bottom: 80px;
+   .single-content{
+      h2{
+         color: $secondary__font;
+         font-family: $secondary__font;
+         font-size: 30px ;
+         line-height: 52px;
+         // letter-spacing: -0.03em;
+         font-weight: 800 ;
+      }
+      p{
+         color: $secondary__color;
+         font-size: 18px;
+         font-weight: 500;
+         font-family: $primary__font;
+         
+      }
+   }
+}
