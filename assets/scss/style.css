@@ -602,6 +602,10 @@ a:hover {
   padding: 70px 0;
   background: var(--secondary__color);
 }
+.footer__area .site__content {
+  margin: 0 auto;
+  text-align: center;
+}
 .footer__area .site__content h4 {
   font-size: 30px;
   font-weight: 600;
