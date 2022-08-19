@@ -1,0 +1,31 @@
+.box__area {
+  padding-bottom: 50px;
+  .card {
+    height: 500px;
+     border: 0px;
+    .img {
+      margin: 0 auto;
+      img {
+        height: 100px;
+        width: 100px;
+      }
+    }
+    .card-body {
+      text-align: center;
+      .card-title{
+         font-size: 22px;
+         font-weight: 800;
+         font-family: $secondary__font;
+         color: $secondary__color;
+         margin: 10px 0px;
+      }
+      .card-text{
+         font-size: 16px;
+         font-weight: 400;
+         font-family: $secondary__font;
+         color: $text__color;
+         margin-bottom: 20px;
+      }
+    }
+  }
+}

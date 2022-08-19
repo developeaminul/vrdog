@@ -1,0 +1,125 @@
+.footer__area {
+  padding: 70px 0;
+  background: $secondary__color;
+
+  .site__content {
+    h4 {
+      font-size: 30px;
+      font-weight: 600;
+      font-family: $secondary__font;
+      color: #fff;
+    }
+
+    p {
+      color: #cccccc;
+      font-family: $secondary__font;
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+
+  .social__info {
+    text-align: center;
+
+    h4 {
+      font-size: 25px;
+      font-weight: 600;
+      font-family: $secondary__font;
+      color: #fff;
+    }
+
+    .social__icon {
+      justify-content: center;
+
+      a {
+        height: 40px;
+        width: 40px;
+        background: #bfbfbf;
+        line-height: 42px;
+        margin: 10px 5px 5px;
+        border-radius: 50%;
+
+        i {
+          color: #000000;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .url {
+      a {
+        color: #bfbfbf;
+        font-size: 16px;
+        font-weight: 400px;
+        font-family: $secondary__font;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .subscribe__form {
+    h4 {
+      font-size: 25px;
+      font-weight: 600;
+      font-family: $secondary__font;
+      color: #fff;
+    }
+
+    form {
+      input{
+        margin: 10px 10px 10px 0;
+        height: 55px;
+        background: transparent;
+        border: 1px solid #bfbfbf;
+        box-shadow: none;
+      }
+      input[type=email]{
+         color: #bfbfbf;
+      }
+      input::-webkit-input-placeholder {
+        color: #bfbfbf;
+        font-style: italic;
+        font-size: 18px;
+      }
+
+      input::-moz-placeholder {
+        color: #bfbfbf;
+        font-style: italic;
+        font-size: 18px;
+      }
+
+      input::-ms-placeholder {
+        color: #bfbfbf;
+        font-style: italic;
+        font-size: 18px;
+      }
+
+      input::placeholder {
+        color: #bfbfbf;
+        font-style: italic;
+        font-size: 18px;
+      }
+
+      .btn-primary {
+        font-size: 22px;
+        font-family: $primary__font;
+        font-weight: 600;
+        color: #fff;
+        height: 55px;
+        margin: 10px 0 10px 10px;
+        background: #3e3939;
+        border: 1px solid #bfbfbf;
+        outline: 0;
+        box-shadow: none;
+      }
+
+    }
+
+    p {
+      color: #cccccc;
+      font-family: $secondary__font;
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+}

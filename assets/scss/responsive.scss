@@ -1,0 +1,131 @@
+/* xx Small devices (landscape phones, 320px and up) */
+@media (min-width: 320px) and (max-width: 575.98px) {
+	.site-header{
+      .mobile-menu-panel{
+         .panel-menu{
+
+         }
+      }
+   };
+	.main-btn {
+		padding: 14px 30px;
+	};
+  /*hero*/
+   .hero{
+      padding: 100px 0px;
+      .hero__contant{
+         text-align: center;
+         .text{
+            text-align: left;
+            h2{
+               text-align: center;
+               font-size: 50px;
+               margin-bottom: 20px;
+               }
+
+         }
+      }
+
+   }
+   .game__area{
+      .game__contant{
+         h3{
+            font-size: 40px;
+         }
+         H4{
+            font-size: 30px;
+         }
+      }
+   }
+   .vision__area{
+      .vision__contain{
+         text-align: center;
+        h3{
+           font-size: 30px;
+           text-align: center;
+
+        }
+        h4{
+           font-size: 25px;
+           text-align: center;
+
+        }
+        p{
+         text-align: center;
+       }
+     }
+   }
+   .footer__area {
+     .site__content {
+        margin-bottom: 30px;
+       h4 {
+         font-size: 30px;
+         text-align: center;
+       }
+
+       p {
+         text-align: center;
+       }
+     }
+
+     .social__info {
+       text-align: center;
+       margin-bottom: 30px;
+
+       .social__icon {
+         justify-content: center;
+      }
+     }
+
+     .subscribe__form {
+       h4 {
+         text-align: center;
+       }
+       p {
+         text-align: center;
+       }
+       .form-row{
+          text-align: center;
+          justify-content: center;
+       }
+     }
+   }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+   .footer__area {
+     .site__content {
+        margin-bottom: 30px;
+     }
+
+     .social__info {
+       text-align: center;
+       margin-bottom: 30px;
+
+     }
+
+     .form-row{
+        text-align: left !important;
+        justify-content: flex-start !important;
+     }
+   }
+ }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .wow-col-md-6{
+     display: none;
+ }
+
+ }
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	/*======= Header =======*/
+  .navbar-wrapper .nav-menu ul li {
+	  margin: 0;
+  }
+}
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {  }
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px){}

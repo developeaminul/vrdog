@@ -1,0 +1,18 @@
+:root {
+   --primary__color:  #ed1c24;
+   --secondary__color: #282828;
+   --text__color: #7b7c7c;
+   --default__color: #fff;
+   --primary__font: 'Open Sans', sans-serif;
+   --secondary__font: 'Lato', sans-serif;
+
+
+ }
+ $primary__color: var(--primary__color);
+ $secondary__color: var(--secondary__color);
+ $text__color: var(--text__color);
+ $default__color: var(--default__color);
+
+
+ $primary__font: var(--primary__font);
+ $secondary__font: var(--secondary__font);

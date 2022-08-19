@@ -1,0 +1,113 @@
+Open Play - https://api.springboardvr.com/v1/public/widget/f8f42930-5d9c-11ec-aa4a-3db00c01fc40/experience/5a5fd090-1bda-11ec-96a8-87e60a6763b4?date=2022-08-03T15%3A25%3A23-04%3A00
+
+Free Roam - https://api.springboardvr.com/v1/public/widget/f8f42930-5d9c-11ec-aa4a-3db00c01fc40/experience/e5ba16c0-8ffa-11ec-8611-bd073d1f8ab4?date=2022-08-03T15%3A25%3A23-04%3A00
+
+2 Hour Party - https://api.springboardvr.com/v1/public/widget/f8f42930-5d9c-11ec-aa4a-3db00c01fc40/experience/704d5520-8ffd-11ec-a178-f79b07924feb?date=2022-08-03T15%3A25%3A23-04%3A00
+
+1 Hour Party - https://api.springboardvr.com/v1/public/widget/f8f42930-5d9c-11ec-aa4a-3db00c01fc40/experience/023ccb30-eb2a-11ec-bb4a-91516cf623cc?date=2022-08-03T15%3A25%3A23-04%3A00
+
+Tower Tag - https://api.springboardvr.com/v1/public/widget/f8f42930-5d9c-11ec-aa4a-3db00c01fc40/experience/643c9570-eb2b-11ec-a9c9-cdea6a19ffab?date=2022-08-03T15%3A25%3A23-04%3A00
+
+1 1/2 Hour Party - https://api.springboardvr.com/v1/public/widget/f8f42930-5d9c-11ec-aa4a-3db00c01fc40/experience/d3fd7da0-fd82-11ec-a9bd-2bad0339df7f?date=2022-08-03T15%3A25%3A23-04%3A00
+
+    "startTimes": [
+        {
+            "date": "2022-08-03T16:00:00-04:00",
+            "minStations": 1,
+            "maxStations": 4,
+            "minPlayers": 1,
+            "maxPlayers": 4
+        },
+        {
+            "date": "2022-08-03T16:30:00-04:00",
+            "minStations": 1,
+            "maxStations": 4,
+            "minPlayers": 1,
+            "maxPlayers": 4
+        },
+        {
+            "date": "2022-08-03T17:00:00-04:00",
+            "minStations": 1,
+            "maxStations": 4,
+            "minPlayers": 1,
+            "maxPlayers": 4
+        },
+        {
+            "date": "2022-08-03T17:30:00-04:00",
+            "minStations": 1,
+            "maxStations": 4,
+            "minPlayers": 1,
+            "maxPlayers": 4
+        },
+        {
+            "date": "2022-08-03T18:00:00-04:00",
+            "minStations": 1,
+            "maxStations": 4,
+            "minPlayers": 1,
+            "maxPlayers": 4
+        },
+        {
+            "date": "2022-08-03T18:30:00-04:00",
+            "minStations": 0,
+            "maxStations": 0,
+            "minPlayers": 0,
+            "maxPlayers": 0
+        },
+        {
+            "date": "2022-08-03T19:00:00-04:00",
+            "minStations": 0,
+            "maxStations": 0,
+            "minPlayers": 0,
+            "maxPlayers": 0
+        },
+        {
+            "date": "2022-08-03T19:30:00-04:00",
+            "minStations": 1,
+            "maxStations": 4,
+            "minPlayers": 1,
+            "maxPlayers": 4
+        },
+        {
+            "date": "2022-08-03T20:00:00-04:00",
+            "minStations": 1,
+            "maxStations": 4,
+            "minPlayers": 1,
+            "maxPlayers": 4
+        },
+        {
+            "date": "2022-08-03T20:30:00-04:00",
+            "minStations": 1,
+            "maxStations": 4,
+            "minPlayers": 1,
+            "maxPlayers": 4
+        }
+    ],
+    "stationAmounts": [
+        {
+            "amount": 1,
+            "discount": null
+        },
+        {
+            "amount": 2,
+            "discount": null
+        },
+        {
+            "amount": 3,
+            "discount": null
+        },
+        {
+            "amount": 4,
+            "discount": null
+        }
+    ]
+}
+
+Make a Reservation - pick number of stations and price
+https://api.springboardvr.com/v1/public/widget/f8f42930-5d9c-11ec-aa4a-3db00c01fc40/experience/d3fd7da0-fd82-11ec-a9bd-2bad0339df7f/available/2022-08-03T17%3A30%3A00-04%3A00?stations=1
+
+[{"id":"d41f2d90-fd82-11ec-8043-a15ccd1d2b7d","organizationId":"5a4d8210-1bda-11ec-8957-c9acd0689363","experienceId":"d3fd7da0-fd82-11ec-a9bd-2bad0339df7f","price":44995,"length":90,"createdAt":"2022-07-06T23:24:48+00:00","updatedAt":"2022-07-06T23:30:33+00:00","deletedAt":null}]
+
+Make a Reservation - add detail
+https://api.springboardvr.com/v1/public/widget/f8f42930-5d9c-11ec-aa4a-3db00c01fc40/experience/d3fd7da0-fd82-11ec-a9bd-2bad0339df7f/available/2022-08-03T17%3A30%3A00-04%3A00/tier/d41f2d90-fd82-11ec-8043-a15ccd1d2b7d?stations=1
+
+{"stations":1,"amountTotal":49343,"subTotal":44995,"amountDue":44995,"taxExclusive":true,"taxTotal":4348,"discountTotal":0,"couponTotal":0,"coupon":null,"discount":null,"currency":"USD"}

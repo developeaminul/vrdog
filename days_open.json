@@ -1,0 +1,42 @@
+Open Play - https://api.springboardvr.com/v1/public/widget/f8f42930-5d9c-11ec-aa4a-3db00c01fc40/experience/5a5fd090-1bda-11ec-96a8-87e60a6763b4/open?start_date=2022-08-03T15%3A25%3A23-04%3A00&end_date=2022-08-09T15%3A25%3A23-04%3A00
+
+Free Roam - https://api.springboardvr.com/v1/public/widget/f8f42930-5d9c-11ec-aa4a-3db00c01fc40/experience/e5ba16c0-8ffa-11ec-8611-bd073d1f8ab4/open?start_date=2022-08-03T15%3A25%3A23-04%3A00&end_date=2022-08-09T15%3A25%3A23-04%3A00
+
+2 Hour Party - https://api.springboardvr.com/v1/public/widget/f8f42930-5d9c-11ec-aa4a-3db00c01fc40/experience/704d5520-8ffd-11ec-a178-f79b07924feb/open?start_date=2022-08-03T15%3A25%3A23-04%3A00&end_date=2022-08-09T15%3A25%3A23-04%3A00
+
+1 Hour Immersion - https://api.springboardvr.com/v1/public/widget/f8f42930-5d9c-11ec-aa4a-3db00c01fc40/experience/023ccb30-eb2a-11ec-bb4a-91516cf623cc/open?start_date=2022-08-03T15%3A25%3A23-04%3A00&end_date=2022-08-09T15%3A25%3A23-04%3A00
+
+Tower Tag Battles - https://api.springboardvr.com/v1/public/widget/f8f42930-5d9c-11ec-aa4a-3db00c01fc40/experience/643c9570-eb2b-11ec-a9c9-cdea6a19ffab/open?start_date=2022-08-03T15%3A25%3A23-04%3A00&end_date=2022-08-09T15%3A25%3A23-04%3A00
+
+1 1/2 hour Party - https://api.springboardvr.com/v1/public/widget/f8f42930-5d9c-11ec-aa4a-3db00c01fc40/experience/d3fd7da0-fd82-11ec-a9bd-2bad0339df7f/open?start_date=2022-08-03T15%3A25%3A23-04%3A00&end_date=2022-08-09T15%3A25%3A23-04%3A00
+
+[
+    {
+        "date": "2022-08-03T15:25:23-04:00",
+        "open": true
+    },
+    {
+        "date": "2022-08-04T15:25:23-04:00",
+        "open": true
+    },
+    {
+        "date": "2022-08-05T15:25:23-04:00",
+        "open": true
+    },
+    {
+        "date": "2022-08-06T15:25:23-04:00",
+        "open": true
+    },
+    {
+        "date": "2022-08-07T15:25:23-04:00",
+        "open": true
+    },
+    {
+        "date": "2022-08-08T15:25:23-04:00",
+        "open": true
+    },
+    {
+        "date": "2022-08-09T15:25:23-04:00",
+        "open": true
+    }
+]

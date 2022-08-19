@@ -1,0 +1,21 @@
+/*======= Sticky Header =======*/
+.sticky-header.sticky-on {
+	.navbar-wrapper {
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		z-index: 999;
+		-webkit-animation: 1.15s ease 0s normal forwards 1 running headerSlideDown;
+		animation: 1.15s ease 0s normal forwards 1 running headerSlideDown;
+		background-color:$default__color;
+		-webkit-box-shadow: 0 8px 20px rgba(0, 29, 35, .8%);
+		box-shadow: 0 8px 20px rgba(0, 29, 35, .8%);
+		border-color: transparent;
+	}
+}
+.sticky-header.sticky-on.transparent-header {
+	.navbar-inner {
+		border-color: transparent;
+	}
+}

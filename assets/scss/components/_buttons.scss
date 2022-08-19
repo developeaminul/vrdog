@@ -1,0 +1,51 @@
+/*======= Global Classes =======*/
+.main-btn {
+   font-family: $primary__font;
+   font-weight: 600;
+   font-size: 18px;
+   display: block;
+   color: $default__color !important;
+   padding: 10px 40px;
+   border-radius: 30px;
+   //background: $primary__color;
+   background-color: $primary__color;
+   border-radius: 100px;
+   position: relative;
+   overflow: hidden;
+   text-transform: capitalize;
+   display: -webkit-inline-box;
+   display: -ms-inline-flexbox;
+   display: inline-flex;
+   -webkit-transition: all 100ms linear;
+   transition: all 100ms linear;
+   i {
+      margin-left: 8px;
+    }
+   &:hover {
+      color: $default__color;
+    }
+ }
+
+ .main-btn{
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100px;
+      width: 20px;
+      background: rgba(243, 243, 243, 0.5%);
+      -webkit-filter: blur(1px);
+              filter: blur(1px);
+      opacity: 0.9;
+      top: -30px;
+      -webkit-transition: 0.7s;
+      transition: 0.7s;
+      -webkit-transform: rotate(-20deg) translateX(-60px);
+              transform: rotate(-20deg) translateX(-60px);
+    }
+    &:hover{
+       &::before{
+         -webkit-transform: rotate(-20deg) translate(140px, 70px);
+         transform: rotate(-20deg) translate(140px, 70px);
+       }
+    }
+ }

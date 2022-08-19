@@ -1,0 +1,54 @@
+.game__area{
+   padding: 60px 0px;
+   .game__contant{
+      h3{
+         font-size: 60px;
+         font-weight: 700;
+         text-align: center;
+         color: $secondary__color;
+         font-family: $primary__font;
+         margin: 0px;
+
+      }
+      H4{
+         text-align: center;
+         font-size: 45px;
+         font-weight: 700;
+         text-align: center;
+         color: #bfc4c4;
+         margin: 0px;
+         font-family: $primary__font;
+         margin-bottom: 40px;
+      }
+   }
+   .card{
+      border: 0px;
+      box-shadow: 0 28px 40px 0 rgba(0, 0, 0, .10);
+      height: 500px;
+      margin: 15px 0px;
+      .card-body{
+         padding: 40px;
+         text-align: center;
+         height: 200px;
+         .card-title{
+            font-size: 22px;
+            font-weight: 800;
+            font-family: $secondary__font;
+            color: $text__color;
+         }
+         .card-text{
+            font-size: 16px;
+            font-weight: 400;
+            font-family: $secondary__font;
+            color: $text__color;
+            margin-bottom: 20px;
+         }
+         .btn__icon{
+            i{
+               font-size: 40px;
+               color: $text__color;
+            }
+         }
+      }
+   }
+}

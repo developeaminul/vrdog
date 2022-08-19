@@ -1,0 +1,33 @@
+.hero{
+   background-image: url('../../assets/image/hero.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment:scroll;
+   background-size: cover;
+   padding: 200px 0px;
+   .hero__contant{
+      .text{
+         text-align: center;
+         h2{
+            font-size: 80px;
+            color: #b08d8b;
+            font-weight: 700;
+            font-family: $primary__font
+            }
+
+      }
+      .btn__tow {
+         //background: transparent;
+         border: 2px solid  $default__color;
+         padding: 10px 40px;
+         border-radius: 30px;
+
+         a{
+            color: $default__color;
+            font-size: 18px;
+            font-weight: 600;
+            background: transparent;
+         }
+      }
+   }
+}

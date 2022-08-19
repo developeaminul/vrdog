@@ -1,0 +1,160 @@
+//Open Play - 1 person - https: //api.springboardvr.com/v1/public/booking
+{
+    "widgetId": "f8f42930-5d9c-11ec-aa4a-3db00c01fc40",
+    "booking": {
+        "title": "Glen Holland",
+        "agree": true,
+        "startTime": "2022-08-05T14:15:00-04:00",
+        "birthday": "1969-04-28T04:00:00Z",
+        "location": {
+            "id": "5a5dc670-1bda-11ec-b462-43eaeba45dec"
+        },
+        "bookingStationTimes": [
+            {
+                "experience": {
+                    "id": "5a5fd090-1bda-11ec-96a8-87e60a6763b4"
+                },
+                "station": {
+                    "id": null
+                },
+                "tier": {
+                    "id": "12208710-1be0-11ec-a324-cfc642a6db6e"
+                },
+                "amountDue": 2995,
+                "amountPaid": 0,
+                "discount": null,
+                "coupon": null,
+                "startedAt": null,
+                "endTime": "2022-08-05T15:15:00-04:00"
+            }
+        ],
+        "guests": [
+            {
+                "firstName": "Glen",
+                "lastName": "Holland",
+                "email": "glen.hollandii@gmail.com",
+                "phone": "5164259107"
+            }
+        ],
+        "numberOfPlayers": 1
+    },
+    "payment": {
+        "gateway": "39d69590-5dcf-11ec-b029-fd3c955c5fdb"
+    }
+}
+//2 hour party  - https: //api.springboardvr.com/v1/public/booking
+//payload
+{
+    "widgetId": "f8f42930-5d9c-11ec-aa4a-3db00c01fc40",
+    "booking": {
+        "title": "Glen Adams",
+        "agree": true,
+        "startTime": "2022-08-03T17:30:00-04:00",
+        "birthday": "1969-04-28T04:00:00Z",
+        "location": {
+            "id": "5a5dc670-1bda-11ec-b462-43eaeba45dec"
+        },
+        "bookingStationTimes": [
+            {
+                "experience": {
+                    "id": "d3fd7da0-fd82-11ec-a9bd-2bad0339df7f"
+                },
+                "station": {
+                    "id": null
+                },
+                "tier": {
+                    "id": "d41f2d90-fd82-11ec-8043-a15ccd1d2b7d"
+                },
+                "amountDue": 44995,
+                "amountPaid": 0,
+                "discount": null,
+                "coupon": null,
+                "startedAt": null,
+                "endTime": "2022-08-03T19:00:00-04:00"
+            }
+        ],
+        "guests": [
+            {
+                "firstName": "Glen",
+                "lastName": "Adams",
+                "email": "glen.hollandii@gmail.com",
+                "phone": "5164259107"
+            }
+        ],
+        "numberOfPlayers": 1
+    },
+    "payment": {
+        "gateway": "39d69590-5dcf-11ec-b029-fd3c955c5fdb"
+    }
+}
+//response
+{
+    "locationId": "5a5dc670-1bda-11ec-b462-43eaeba45dec",
+    "organizationId": "5a4d8210-1bda-11ec-8957-c9acd0689363",
+    "startTime": "2022-08-03T21:30:00+00:00",
+    "hostId": "feca8080-8c14-11ec-a18f-3dee17931c7e",
+    "numStations": 1,
+    "numPlayers": 1,
+    "sourceableType": "SpringboardVr\\Services\\Booking\\Entities\\BookingWidget",
+    "sourceableId": "f8f42930-5d9c-11ec-aa4a-3db00c01fc40",
+    "title": "Glen Adams",
+    "waiverReferenceHost": "ab1403a0-1370-11ed-b35a-d1a84ed5e374",
+    "waiverReferenceGuest": "ab1404e0-1370-11ed-ba8b-37188f93bb99",
+    "waiverNumSurprisedGuests": 0,
+    "waiverNumSigned": 0,
+    "waiverNumMinors": 0,
+    "waiverLastReminderAt": "2022-08-03T21:10:14.583466Z",
+    "updatedAt": "2022-08-03T21:10:15+00:00",
+    "createdAt": "2022-08-03T21:10:14+00:00",
+    "id": "ab147c60-1370-11ed-99d8-2dbef30d9655",
+    "paymentStatus": "initiated",
+    "refundable": false,
+    "incrementalVersion": "1",
+    "transactions": [
+        {
+            "id": 86162,
+            "uuid": "ab18aea0-1370-11ed-8520-8753042077c6",
+            "organization_id": 3117,
+            "gateway_id": 4140,
+            "booking_id": 3474328,
+            "customer_id": 2832577,
+            "customer_card_id": null,
+            "discount_id": null,
+            "coupon_id": null,
+            "gateway_transaction_id": "cs_live_a1Qn84XMUZSZMMNyxNvaUAag92TruHdjaD3vtFu84014mXeasJddZ9uGua",
+            "booking_widget_id": 1644,
+            "amount": 49343,
+            "tax_exclusive": true,
+            "tax_amount": 4348,
+            "currency": "USD",
+            "status": "initiated",
+            "created_at": "2022-08-03T21:10:14.000000Z",
+            "updated_at": "2022-08-03T21:10:15.000000Z",
+            "deleted_at": null
+        }
+    ],
+    "bookingStationTimes": [
+        {
+            "id": 4659370,
+            "organizationId": 3117,
+            "bookingId": "ab147c60-1370-11ed-99d8-2dbef30d9655",
+            "stationId": "fffa55b0-fd85-11ec-a73a-255f19f809e8",
+            "locationId": 3439,
+            "experienceTierId": "d41f2d90-fd82-11ec-8043-a15ccd1d2b7d",
+            "experienceId": "d3fd7da0-fd82-11ec-a9bd-2bad0339df7f",
+            "customerCardId": null,
+            "discountId": null,
+            "couponId": null,
+            "startedAt": null,
+            "startTime": "2022-08-03T21:30:00+00:00",
+            "endTime": "2022-08-03T23:00:00+00:00",
+            "pausedAt": null,
+            "pausedDuration": null,
+            "amountDue": 49343,
+            "amountPaid": 0,
+            "createdAt": "2022-08-03T21:10:15+00:00",
+            "updatedAt": "2022-08-03T21:10:15+00:00",
+            "deletedAt": null
+        }
+    ]
+}

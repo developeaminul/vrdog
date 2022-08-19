@@ -1,0 +1,46 @@
+/*-----------------------------------------------------------------------------------
+    Template Name: VRDOG Template
+    Template URI:
+    Author: Aminul Islam
+    Author URI: themeapex.com
+    Mail: mdaminulislam2015bd@gmail.com
+    Whatsapp: 01784004635
+    Version: 1.0
+
+    Note: This is Main Style Scss File.
+-----------------------------------------------------------------------------------
+	CSS INDEX
+	===================
+    ## Common
+    ## Common Margin & Padding
+    ## Keyframes
+    ## Global Classes
+    ## Preloader
+    ## Header
+        ## Topbar
+        ## Mobile Panel
+        ## Sticky Header
+        ## Transparent Header
+    ## Footer
+    ## Hero Section One
+    ## Page Title
+    ## Common Heading
+    ## Game area
+    ## Box area
+    ## Vision Area
+    ## Footer
+-----------------------------------------------------------------------------------*/
+
+@import './base/typography';
+@import './utils/variables';
+@import './utils/helpers';
+@import './components/buttons';
+@import './components/keyframes';
+@import './layout/header';
+@import './layout/header_sticky';
+@import './layout/header_mobile';
+@import './components/hero';
+@import './components/game_area';
+@import './components/box_area';
+@import './components/vision_area';
+@import './layout/footer';

@@ -1,0 +1,42 @@
+.vision__area{
+   padding-bottom: 50px;
+   .image{
+      img{
+        margin: 0;
+      }
+   }
+   .vision__contain{
+      margin: 20px 0px;
+     h3{
+        font-size: 35px;
+        font-family: $primary__font;
+        color: $secondary__color;
+        font-weight: 700;
+     }
+     h4{
+        font-size: 30px;
+        font-family: $secondary__font;
+        color: #bfc4c4;
+        font-weight: 700;
+     }
+     p{
+        font-size: 16px;
+        font-weight: 400;
+        font-family: $secondary__font;
+        color: $text__color;
+        margin: 30px 0px;
+     }
+     .btn__three{
+        padding: 10px 40px;
+        border-radius: 30px;
+        background: #0e76bc;
+        a{
+           color: $default__color;
+           font-size: 18px;
+           font-weight: 600;
+
+        }
+     }
+
+   }
+}
