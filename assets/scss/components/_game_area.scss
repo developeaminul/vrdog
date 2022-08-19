@@ -1,8 +1,8 @@
 .game__area{
-   padding: 60px 0px;
+   padding: 30px 0px;
    .game__contant{
-      h3{
-         font-size: 60px;
+      h1{
+         font-size: 3rem;
          font-weight: 700;
          text-align: center;
          color: $secondary__color;
@@ -10,29 +10,39 @@
          margin: 0px;
 
       }
-      H4{
+      H2{
          text-align: center;
-         font-size: 45px;
+         font-size: 2rem;
          font-weight: 700;
          text-align: center;
          color: #bfc4c4;
          margin: 0px;
+         margin-top: 1rem;
          font-family: $primary__font;
-         margin-bottom: 40px;
+      }
+      p{
+         font-size: 1.2rem;
+      }
+      .mm-4{
+         margin-top: -4px;
+      }
+      .mm-2{
+         margin-top: -2px;
       }
    }
    .card{
       border: 0px;
       box-shadow: 0 28px 40px 0 rgba(0, 0, 0, .10);
-      height: 500px;
+      // height: 500px;
       margin: 15px 0px;
       .card-body{
          padding: 40px;
          text-align: center;
-         height: 200px;
+         // height: 200px;
          .card-title{
             font-size: 22px;
-            font-weight: 800;
+            margin-top: -15px;
+            font-weight: 600;
             font-family: $secondary__font;
             color: $text__color;
          }
@@ -41,7 +51,7 @@
             font-weight: 400;
             font-family: $secondary__font;
             color: $text__color;
-            margin-bottom: 20px;
+            // margin-bottom: 20px;
          }
          .btn__icon{
             i{

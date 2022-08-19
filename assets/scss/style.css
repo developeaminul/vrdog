@@ -478,40 +478,48 @@ a:hover {
 }
 
 .game__area {
-  padding: 60px 0px;
+  padding: 30px 0px;
 }
-.game__area .game__contant h3 {
-  font-size: 60px;
+.game__area .game__contant h1 {
+  font-size: 3rem;
   font-weight: 700;
   text-align: center;
   color: var(--secondary__color);
   font-family: var(--primary__font);
   margin: 0px;
 }
-.game__area .game__contant H4 {
+.game__area .game__contant H2 {
   text-align: center;
-  font-size: 45px;
+  font-size: 2rem;
   font-weight: 700;
   text-align: center;
   color: #bfc4c4;
   margin: 0px;
+  margin-top: 1rem;
   font-family: var(--primary__font);
-  margin-bottom: 40px;
+}
+.game__area .game__contant p {
+  font-size: 1.2rem;
+}
+.game__area .game__contant .mm-4 {
+  margin-top: -4px;
+}
+.game__area .game__contant .mm-2 {
+  margin-top: -2px;
 }
 .game__area .card {
   border: 0px;
   box-shadow: 0 28px 40px 0 rgba(0, 0, 0, 0.1);
-  height: 500px;
   margin: 15px 0px;
 }
 .game__area .card .card-body {
   padding: 40px;
   text-align: center;
-  height: 200px;
 }
 .game__area .card .card-body .card-title {
   font-size: 22px;
-  font-weight: 800;
+  margin-top: -15px;
+  font-weight: 600;
   font-family: var(--secondary__font);
   color: var(--text__color);
 }
@@ -520,7 +528,6 @@ a:hover {
   font-weight: 400;
   font-family: var(--secondary__font);
   color: var(--text__color);
-  margin-bottom: 20px;
 }
 .game__area .card .card-body .btn__icon i {
   font-size: 40px;
@@ -531,7 +538,6 @@ a:hover {
   padding-bottom: 50px;
 }
 .box__area .card {
-  height: 500px;
   border: 0px;
 }
 .box__area .card .img {
@@ -546,17 +552,16 @@ a:hover {
 }
 .box__area .card .card-body .card-title {
   font-size: 22px;
+  margin-top: -15px;
   font-weight: 800;
   font-family: var(--secondary__font);
   color: var(--secondary__color);
-  margin: 10px 0px;
 }
 .box__area .card .card-body .card-text {
   font-size: 16px;
   font-weight: 400;
   font-family: var(--secondary__font);
   color: var(--text__color);
-  margin-bottom: 20px;
 }
 
 .vision__area {
