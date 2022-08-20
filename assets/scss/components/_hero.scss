@@ -8,7 +8,7 @@
    .hero__contant{
       .text{
          text-align: center;
-         h2{
+         h1{
             font-size: 80px;
             color: #b08d8b;
             font-weight: 700;
@@ -30,4 +30,13 @@
          }
       }
    }
+}
+
+.s_slider{
+      h1{
+         font-size: 3rem;
+         color: #b08d8b;
+         font-weight: 700;
+         font-family: $primary__font
+         }
 }

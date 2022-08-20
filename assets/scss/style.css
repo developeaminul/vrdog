@@ -459,7 +459,7 @@ a:hover {
 .hero .hero__contant .text {
   text-align: center;
 }
-.hero .hero__contant .text h2 {
+.hero .hero__contant .text h1 {
   font-size: 80px;
   color: #b08d8b;
   font-weight: 700;
@@ -475,6 +475,13 @@ a:hover {
   font-size: 18px;
   font-weight: 600;
   background: transparent;
+}
+
+.s_slider h1 {
+  font-size: 3rem;
+  color: #b08d8b;
+  font-weight: 700;
+  font-family: var(--primary__font);
 }
 
 .game__area {
