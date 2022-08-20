@@ -158,11 +158,12 @@ a:hover {
 .navbar-wrapper .nav-menu ul {
   display: flex;
   align-items: center;
+  margin: 0 !important;
 }
 .navbar-wrapper .nav-menu ul li {
   position: relative;
   line-height: 90px;
-  margin: 0 10px;
+  margin: 0 10px !important;
 }
 .navbar-wrapper .nav-menu a {
   font-size: 16px;
@@ -475,13 +476,6 @@ a:hover {
   font-size: 18px;
   font-weight: 600;
   background: transparent;
-}
-
-.s_slider h1 {
-  font-size: 3rem;
-  color: #b08d8b;
-  font-weight: 700;
-  font-family: var(--primary__font);
 }
 
 .game__area {

@@ -39,7 +39,22 @@
                   transform: translate(-50%, -50%);
                   text-align: center;
 
+                 
+                     h1 {
+                        font-size: 3rem;
+                        color: #eb645d;
+                        font-weight: 700;
+                        
+                     }
+                     h2{
+                        font-size: 2rem;
+                        color: #202020;
+                        font-weight: 700;
+                        margin-bottom: 20px;
+                     }
+                  
                }
+
             }
 
 
@@ -52,36 +67,40 @@
 
 
       }
+
       .swiper-button-prev,
-      .swiper-button-next{
+      .swiper-button-next {
          height: 40px;
          width: 40px;
          background: #ed1c24;
-         
-         &:hover{
+
+         &:hover {
             background: #fdfdfd;
             transition: .7s ease 0s 1 normal forwards;
-            
-            &::after{
+
+            &::after {
                color: #202020;
-             }
+            }
          }
-         &::after{
-           font-size: 20px;
-           color: #fdfdfd;
+
+         &::after {
+            font-size: 20px;
+            color: #fdfdfd;
          }
       }
-      .swiper-pagination-bullet{
+
+      .swiper-pagination-bullet {
          height: 14px;
          width: 14px;
          background: #ed1c24;
       }
-      .swiper-pagination-bullet-active{
+
+      .swiper-pagination-bullet-active {
          height: 16px;
          width: 16px;
          margin-bottom: -1px;
       }
-      
+
    }
 }
 
@@ -108,6 +127,18 @@
 
 
                   }
+                  .slide-content {
+                    
+                     h1 {
+                        font-size: 1.5rem;
+                       
+                        
+                     }
+                     h2{
+                        font-size: 1rem;
+                     }
+                  
+               }
                }
             }
          }
@@ -130,6 +161,18 @@
 
 
                   }
+                  .slide-content {
+                    
+                     h1 {
+                        font-size: 2rem;
+                       
+                        
+                     }
+                     h2{
+                        font-size: 1.7rem;
+                     }
+                  
+               }
                }
             }
          }
@@ -151,6 +194,20 @@
                      height: 30em;
 
 
+                  }
+
+
+                  .slide-content {
+                    
+                        h1 {
+                           font-size: 2rem;
+                          
+                           
+                        }
+                        h2{
+                           font-size: 1.7rem;
+                        }
+                     
                   }
                }
             }
@@ -176,6 +233,18 @@
 
 
                   }
+                  .slide-content {
+                    
+                     h1 {
+                        font-size: 3rem;
+                       
+                        
+                     }
+                     h2{
+                        font-size: 2rem;
+                     }
+                  
+               }
                }
             }
          }

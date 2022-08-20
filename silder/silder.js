@@ -28,30 +28,40 @@
 
 
 
-var slider1 = new Swiper ('.vrdog__slider', {
-  effect: 'cube',
-  
+var slider1 = new Swiper(".vrdog__slider", {
+  effect: "cube",
+  slidesPerView: 1,
+  spaceBetween: 30,
+  centeredSlides: true,
+  grabCursor: true,
+  loop: true,
+  loopFillGroupWithBlank: true,
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
   },
   autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-  
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 
   scrollbar: {
-    el: '.swiper-scrollbar',
+    el: ".swiper-scrollbar",
   },
 });
 
 
 var slider2 = new Swiper ('.swiper__testimonial', {
-  
+   slidesPerView: 1,
+   spaceBetween: 30,
+   centeredSlides: true,
+   grabCursor: true,
+   loop: true,
+   loopFillGroupWithBlank: true,
   pagination: {
     el: '.swiper-pagination',
   },
