@@ -731,6 +731,62 @@ a:hover {
   font-family: var(--secondary__font);
 }
 .section-privacy .article p {
+  color: var(--secondary__color);
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--primary__font);
+}
+
+.single-banner {
+  position: relative;
+}
+.single-banner .gutter-spacious .spacing {
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+.single-banner .gutter-spacious .spacing ul li a {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--primary__font);
+  color: linear-gradient(140deg, #D2A8FF 12.09%, #F778BA 42.58%, #FF7B72 84.96%) !important;
+}
+.single-banner .gutter-spacious .spacing .color-fg-default {
+  color: var(--default__color);
+  font-family: var(--secondary__font);
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+}
+.single-banner .gutter-spacious .spacing .banner-image .cover-image {
+  height: 100% t;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  left: 0;
+  top: 0;
+}
+.single-banner .img-position {
+  width: 100%;
+  bottom: 0px !important;
+  background-color: white;
+  height: 80px;
+  margin-top: -80px;
+  margin-bottom: 80px;
+}
+
+.card-single {
+  margin-bottom: 80px;
+}
+.card-single .single-content h2 {
+  color: var(--secondary__font);
+  font-family: var(--secondary__font);
+  font-size: 30px;
+  line-height: 52px;
+  font-weight: 800;
+}
+.card-single .single-content p {
+  color: var(--secondary__color);
   font-size: 18px;
   font-weight: 500;
   font-family: var(--primary__font);
