@@ -1,0 +1,91 @@
+.swiper__testimonial {
+   padding: 60px 0px;
+   overflow: hidden;
+
+   .swiper-wrapper {
+      .swiper-slide {
+       
+
+         .hero__contant {
+            margin: 30px;
+            margin-bottom: 0px;
+            padding: 40px;
+            background: #F6F6F6;
+            border-radius: 6px;
+            height: 250px;
+            .text{
+               
+               h4{
+                  margin-top: 30px;
+               }
+            }
+         }
+      }
+   }
+
+   .swiper-button-prev,
+   .swiper-button-next {
+      height: 40px;
+      width: 40px;
+      background: #ed1c24;
+
+      &:hover {
+         background: #FBF3D5;
+         transition: .7s ease 0s 1 normal forwards;
+
+         &::after {
+            color: #202020;
+         }
+      }
+
+      &::after {
+         font-size: 20px;
+         color: #fdfdfd;
+      }
+   }
+}
+
+/* xx Small devices (landscape phones, 320px and up) */
+@media (min-width: 320px) and (max-width: 575.98px) {
+   .swiper__testimonial {
+      .swiper-wrapper {
+         .swiper-slide {
+            .hero__contant {
+               height: 450px;
+               margin: 15px;
+               padding: 30px;
+               .text{
+                  font-size: 18px;
+                  font-weight: 500;
+               }
+            }
+         }
+      }
+   }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+   .swiper__testimonial {
+      .swiper-wrapper {
+         .swiper-slide {
+            .hero__contant {
+               height: 350px;
+            }
+         }
+      }
+   }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+   .swiper__testimonial {
+      .swiper-wrapper {
+         .swiper-slide {
+            .hero__contant {
+               height: 300px;
+            }
+         }
+      }
+   }
+}

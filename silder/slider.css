@@ -8,6 +8,7 @@
   width: 100%;
   margin: 0 auto;
   background-color: #fdfdfd;
+  overflow: hidden;
 }
 .vrdog__slider_swiper .vrdog__slider .swiper-wrapper .swiper-slide {
   border-radius: 7px;
@@ -34,8 +35,8 @@
 }
 .vrdog__slider_swiper .vrdog__slider .swiper-button-prev,
 .vrdog__slider_swiper .vrdog__slider .swiper-button-next {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   background: #ed1c24;
 }
 .vrdog__slider_swiper .vrdog__slider .swiper-button-prev:hover,
@@ -49,7 +50,7 @@
 }
 .vrdog__slider_swiper .vrdog__slider .swiper-button-prev::after,
 .vrdog__slider_swiper .vrdog__slider .swiper-button-next::after {
-  font-size: 25px;
+  font-size: 20px;
   color: #fdfdfd;
 }
 .vrdog__slider_swiper .vrdog__slider .swiper-pagination-bullet {
@@ -99,4 +100,4 @@
   .vrdog__slider_swiper .vrdog__slider .swiper-wrapper .swiper-slide .side-imag img {
     height: 35em;
   }
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=slider.css.map */
