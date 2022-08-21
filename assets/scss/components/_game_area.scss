@@ -1,4 +1,4 @@
-.game__area{
+.game__area, .game__area-2{
    padding: 30px 0px;
    .game__contant{
       h1{
@@ -36,12 +36,11 @@
       // height: 500px;
       margin: 15px 0px;
       .card-body{
-         padding: 40px;
+         padding: 30px;
          text-align: center;
          // height: 200px;
          .card-title{
             font-size: 22px;
-            margin-top: -15px;
             font-weight: 600;
             font-family: $secondary__font;
             color: $text__color;
@@ -56,6 +55,42 @@
          .btn__icon{
             i{
                font-size: 40px;
+               color: $text__color;
+            }
+         }
+
+         span{
+            font-size: 22px;
+            line-height: 20px;
+            font-weight: 600;
+            font-family: $secondary__font;
+            color: $text__color;
+           
+         }
+         h2{
+            font-size: 22px;
+            margin-top: 30px;
+            font-weight: 600;
+            font-family: $secondary__font;
+            color: $text__color;
+            
+         }
+         .price-2{
+            font-size: 22px;
+            line-height: 20px;
+            font-weight: 600;
+            font-family: $secondary__font;
+            color: $text__color;
+            margin-bottom: 30px;
+           
+         }
+         ul{
+            padding: 0px;
+            margin: 0px;
+            li{
+               font-size: 16px;
+               font-weight: 400;
+               font-family: $secondary__font;
                color: $text__color;
             }
          }

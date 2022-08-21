@@ -1,8 +1,11 @@
 .box__area {
   padding-bottom: 50px;
+
   .card {
     // height: 500px;
+    padding-top: 30px;
      border: 0px;
+     box-shadow: 0 0px 0px 0;
     .img {
       margin: 0 auto;
       img {
@@ -12,6 +15,7 @@
     }
     .card-body {
       text-align: center;
+     
       .card-title{
          font-size: 22px;
          margin-top: -15px;
