@@ -1,0 +1,110 @@
+/*===============================================*/
+/*Go to Top*/
+/*===============================================*/
+.go-top {
+   position: fixed;
+   cursor: pointer;
+   top: 0;
+   right: 15px;
+   background-color: $primary__color;
+   z-index: 4;
+   width: 50px;
+   text-align: center;
+   height: 50px;
+   line-height: 50px;
+   opacity: 0;
+   visibility: hidden;
+   -webkit-transition: 0.9s;
+   transition: 0.9s;
+   //border-radius: 2px;
+
+   i {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      color: #ffffff;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+
+      &:last-child {
+         opacity: 0;
+         visibility: hidden;
+         top: 60%;
+      }
+   }
+
+   &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-color: $primary__color;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      
+   }
+
+   &:hover {
+      color: #202020;
+      background-color: #ffff;
+
+      &::before {
+         opacity: 1;
+         visibility: visible;
+      }
+
+      i {
+         &:first-child {
+            opacity: 0;
+            top: 0;
+            visibility: hidden;
+         }
+
+         &:last-child {
+            opacity: 1;
+            visibility: visible;
+            top: 50%;
+         }
+      }
+   }
+
+   &:focus {
+      color: #ffffff;
+
+      &::before {
+         opacity: 1;
+         visibility: visible;
+      }
+
+      i {
+         &:first-child {
+            opacity: 0;
+            top: 0;
+            visibility: hidden;
+         }
+
+         &:last-child {
+            opacity: 1;
+            visibility: visible;
+            top: 50%;
+         }
+      }
+   }
+}
+
+.go-top.active {
+   top: 96%;
+   -webkit-transform: translateY(-96%);
+   transform: translateY(-96%);
+   opacity: 1;
+   visibility: visible;
+}

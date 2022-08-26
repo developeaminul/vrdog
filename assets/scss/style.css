@@ -565,6 +565,11 @@ a:hover {
   font-family: var(--secondary__font);
   color: var(--text__color);
 }
+.game__area .card .card-body a.main-btn, .game__area-2 .card .card-body a.main-btn {
+  font-size: 14px;
+  padding: 7px 30px;
+  margin-top: 30px;
+}
 
 .box__area {
   padding-bottom: 50px;
@@ -751,6 +756,95 @@ a:hover {
   font-family: var(--secondary__font);
   font-weight: 400;
   font-size: 16px;
+}
+
+/*===============================================*/
+/*Go to Top*/
+/*===============================================*/
+.go-top {
+  position: fixed;
+  cursor: pointer;
+  top: 0;
+  right: 15px;
+  background-color: var(--primary__color);
+  z-index: 4;
+  width: 50px;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.9s;
+}
+.go-top i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: #ffffff;
+  transition: 0.5s;
+}
+.go-top i:last-child {
+  opacity: 0;
+  visibility: hidden;
+  top: 60%;
+}
+.go-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--primary__color);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.go-top:hover {
+  color: #202020;
+  background-color: white;
+}
+.go-top:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+.go-top:hover i:first-child {
+  opacity: 0;
+  top: 0;
+  visibility: hidden;
+}
+.go-top:hover i:last-child {
+  opacity: 1;
+  visibility: visible;
+  top: 50%;
+}
+.go-top:focus {
+  color: #ffffff;
+}
+.go-top:focus::before {
+  opacity: 1;
+  visibility: visible;
+}
+.go-top:focus i:first-child {
+  opacity: 0;
+  top: 0;
+  visibility: hidden;
+}
+.go-top:focus i:last-child {
+  opacity: 1;
+  visibility: visible;
+  top: 50%;
+}
+
+.go-top.active {
+  top: 96%;
+  transform: translateY(-96%);
+  opacity: 1;
+  visibility: visible;
 }
 
 .section-privacy {

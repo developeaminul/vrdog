@@ -24,7 +24,23 @@
 
 (function ($) {
     'use strict';
+   /*=====================================
+  // Go to Top
+  ======================================= */
+   $(window).on("scroll", function () {
+      var scrolled = $(window).scrollTop();
+      if (scrolled > 300) $(".go-top").addClass("active");
+      if (scrolled < 300) $(".go-top").removeClass("active");
+   });
 
+   // Click Event
+   $(".go-top").on("click", function () {
+      $("html, body").animate({ scrollTop: "0" }, 500);
+   });
+
+
+
+   
     // ===== Main Menu
     function mainMenu() {
         const navbarToggler = $('.nav-toggler'),
@@ -108,6 +124,7 @@
             siteHeader.height(newHeight);
         }
     }
+
     /*---------------------
     === Document Ready  ===
     ----------------------*/
@@ -129,5 +146,18 @@
     $(window).on('scroll', function () {
         stickyHeader();
     });
+   /*=====================================
+   * Menu Scroll js*
+   ======================================*/
+   smartScroll.init({
+      speed: 100,
+      addActive: true, // default true
+      activeClass: "current", // default active
+      offset: 100, // default 100
+      },
+      function () {
+      console.log("callback");
+      }
+   );
 
 })(jQuery);
