@@ -11,7 +11,7 @@ const Page2 = () => {
 
     const fetchTimeAndCost = () => {
         setLoading(true)
-        fetch('https://api.springboardvr.com/v1/public/widget/f8f42930-5d9c-11ec-aa4a-3db00c01fc40/experience/5a5fd090-1bda-11ec-96a8-87e60a6763b4/available/2022-08-29T18:45:00-04:00?stations=1')
+        fetch(`https://api.springboardvr.com/v1/public/widget/f8f42930-5d9c-11ec-aa4a-3db00c01fc40/experience/5a5fd090-1bda-11ec-96a8-87e60a6763b4/available/2022-08-29T18:45:00-04:00?stations=${selectedPeople}`)
             .then(res => res.json())
             .then(data => {
                 setLoading(false)
@@ -45,7 +45,7 @@ const Page2 = () => {
 
             <div>
                 <h6 className='select-station-label'>Select the number of people</h6>
-                <button onClick={handleTimeAndCost} className='select-station-btn'>{selectedPeople} Stations</button>
+                <button onClick={handleTimeAndCost} className='select-station-btn'>{selectedPeople || 1} Stations</button>
             </div>
             <div>
                 <h6 className='select-station-label'>Length of time (Price Per Station)</h6>

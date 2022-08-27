@@ -4,31 +4,25 @@ import { AppContext } from '../context';
 
 import { Grid } from '@mui/material';
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
 const Page3 = () => {
 
     const [loading, setLoading] = React.useState(false)
-    const { selectedPeople, timeAndCost, dispatch } = React.useContext(AppContext);
+    const [hasCoupon, setHasCoupon] = React.useState(false)
+    const { formValues, timeAndCost, dispatch } = React.useContext(AppContext);
 
-    const fetchTimeAndCost = () => {
-        setLoading(true)
-        fetch('https://api.springboardvr.com/v1/public/widget/f8f42930-5d9c-11ec-aa4a-3db00c01fc40/experience/5a5fd090-1bda-11ec-96a8-87e60a6763b4/available/2022-08-29T18:45:00-04:00?stations=1')
-            .then(res => res.json())
-            .then(data => {
-                setLoading(false)
-                const item = data[0]
-                const value = `${item.length} Min - $${item.price / 100}`
-                dispatch('SET_TIME_COST', value);
-            })
-            .catch(e => setLoading(false))
+    const handleCoupon = () => {
+        setHasCoupon(old => !old)
     }
+    const handleChange = e => {
+        const { value, name } = e.target;
+        const newData = formValues;
+        newData[name] = value;
 
-    const handleSelectPeople = (e) => {
-        dispatch('SET_PEOPLE', e.target.value);
-        fetchTimeAndCost()
+        dispatch('SET_FORM_VALUES', newData)
+        console.log('set', formValues);
     }
-    const handleTimeAndCost = () => {
-        fetchTimeAndCost()
-    }
+   
     return (
         <div className="step3-details">
 
@@ -38,49 +32,49 @@ const Page3 = () => {
                 <Grid container rowSpacing={1} columnSpacing={3}>
                     <Grid item xs={12} sm={6}>
                         <label htmlFor="email">Email<span className='required'>*</span></label>
-                        <input type="email" id='email' />
+                        <input required onChange={handleChange} name='email' type="email" id='email' />
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <label htmlFor="firsName">First Name<span className='required'>*</span></label>
-                        <input type="text" id='firsName' />
+                        <input required onChange={handleChange} name='fname' type="text" id='firsName' />
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <label htmlFor="lastName">Last Name<span className='required'>*</span></label>
-                        <input type="text" id='lastName' />
+                        <input required onChange={handleChange} name='lname' type="text" id='lastName' />
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <label htmlFor="birthday">Birthday<span className='required'>* </span>
-                        <a href="https://springboardvr.com/why-birthday/" target="_blank">Why do we need this?</a>
+                            <a href="https://springboardvr.com/why-birthday/" target="_blank">Why do we need this?</a>
                         </label>
                         <Grid container justifyContent="space-between">
                             <Grid item xs={3}>
-                                <input type="text" placeholder='Day' />
+                                <input required onChange={handleChange} type="text" name='birthDay' placeholder='Day' />
                             </Grid>
                             <Grid item xs={4}>
-                                <select className="birth-month-select">
+                                <select className="birth-month-select" name='birthMonth' required onChange={handleChange}>
                                     {
-                                        months.map((month,index) => <option key={index} value={month}>{month}</option>)
+                                        months.map((month, index) => <option key={index} value={month}>{month}</option>)
                                     }
                                 </select>
                             </Grid>
                             <Grid item xs={4}>
-                                <input type="text" placeholder='Year' />
+                                <input required onChange={handleChange} type="text" name='birthYear' placeholder='Year' />
                             </Grid>
                         </Grid>
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <label htmlFor="phone">Phone<span className='required'>*</span></label>
-                        <input type="text" id='phone' />
+                        <input required onChange={handleChange} name='phone' type="text" id='phone' />
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <label htmlFor="reservation">Reservation Name<span className='required'>*</span></label>
-                        <input type="text" id='reservation' />
+                        <input required onChange={handleChange} name='reservationName' type="text" id='reservation' />
                     </Grid>
                 </Grid>
                 <span className='required-field-label'>* Required Fields</span>
 
 
-                <input type="checkbox" name="agree" />
+                <input required onChange={handleChange} type="checkbox" name="agree" />
                 <span>I have read and agree to the
                     <a style={{ marginLeft: '2px' }} href="https://springboardvr.com/scheduler-terms/" target="_blank">
                         terms of service
@@ -95,7 +89,7 @@ const Page3 = () => {
                 <div class="pricesummary">
                     <div class="subtotal">
                         <div class="label">Subtotal</div>
-                        <div class="value">$29.95</div>
+                        <div class="value">{timeAndCost.split('-')[1]}</div>
                     </div>
                     <div class="tax">
                         <div class="label">
@@ -108,8 +102,18 @@ const Page3 = () => {
                         <div class="value">$32.84</div>
                     </div>
                 </div>
-                <div class="coupon">
-                    <button data-v-727f6dd1="" type="button" class="ui-button openbutton dib -tiny">Have a Coupon Code?</button>
+                <div class="coupon-container">
+                    <button onClick={handleCoupon} className="coupon-trigger-btn" type="button">Have a Coupon Code?</button>
+
+                    {hasCoupon &&
+                        <div className='information-form coupon'>
+                            <div className='coupon-input'>
+                                <label htmlFor="coupon">Coupon Code</label>
+                                <input required onChange={handleChange} type="text" id='coupon' />
+                            </div>
+                            <button className="submit-btn" type="button">Submit</button>
+                        </div>
+                    }
                 </div>
             </div>
         </div>

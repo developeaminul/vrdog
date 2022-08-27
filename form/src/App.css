@@ -126,12 +126,12 @@ body {
     font-weight: 500;
 }
 
-.date-card .date .cuurent-date {
-    font-size: 14px;
-    font-weight: 400;
+.date-card .date .current-date {
+    font-size: 18px;
+    font-weight: 500;
 }
 
-.date-card .date .cuurent-month {
+.date-card .date .current-month {
     font-size: 12px;
     font-weight: 500;
 }
@@ -209,8 +209,9 @@ body {
     background-color: #283b57;
     border: .1rem solid #283b57;
     color: #fff;
-    padding: 10px 20px;
+    padding: 13px 20px;
     width: 235px;
+    cursor: pointer;
     border-radius: 4px;
 }
 
@@ -219,6 +220,7 @@ body {
     font-size: 13px;
     font-weight: 500;
     margin-top: 30px;
+    margin-bottom: 8px;
 }
 
 .step3-details .page-title {
@@ -284,7 +286,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.price-container .coupon button {
+.price-container .coupon-container .coupon-trigger-btn {
     font-size: 12px;
     line-height: 16px;
     font-family: Open Sans, sans-serif;
@@ -306,6 +308,32 @@ body {
     will-change: color;
     text-decoration: underline;
     margin-top: 22px;
+}
+
+.information-form.coupon {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.information-form.coupon .coupon-input {
+    width: 100%;
+}
+
+.information-form.coupon .submit-btn {
+    margin-left: 40px;
+    transition: background .3s ease, border .3s ease, color .3s ease;
+    transform: translateZ(0);
+    will-change: background, border, color;
+    background: #fff;
+    border: .1rem solid #d5d8df;
+    box-shadow: 0 0 1px #d5d8df;
+    color: #182942;
+    height: 48px;
+    width: 150px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .pricesummary .label {
@@ -332,6 +360,14 @@ body {
 }
 
 .footer-container .informations {
+    margin-left: 40px;
+}
+
+.footer-container .informations .details {
+    display: flex;
+}
+
+.footer-container .people-station {
     margin-left: 40px;
 }
 
@@ -370,7 +406,7 @@ body {
     will-change: background;
     border-radius: 6px;
     background: linear-gradient(135deg, #f24f36, #f35437 37.81%, #f99941);
-    padding: 10px 48px;
+    padding: 10px 0;
     color: rgb(255, 255, 255);
     background: rgb(0, 0, 0);
     border-color: rgb(0, 0, 0);
@@ -382,7 +418,7 @@ body {
     margin-left: auto;
 }
 
-.footer-container .footer-btn.continue[disabled] {
+button[disabled] {
     cursor: not-allowed!important;
     background: rgba(24, 41, 66, .5)!important;
     color: hsla(0, 0%, 100%, .5)!important;
