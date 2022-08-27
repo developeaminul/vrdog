@@ -1,4 +1,4 @@
-.game__area, .game__area-2{
+.game__area{
    padding: 30px 0px;
    .game__contant{
       h1{
@@ -30,11 +30,21 @@
          margin-top: -2px;
       }
    }
+   a{
+      width: 100%;
+   }
    .card{
+
       border: 0px;
       box-shadow: 0 28px 40px 0 rgba(0, 0, 0, .10);
       // height: 500px;
       margin: 15px 0px;
+      height: 500px;
+
+      img.card-img-top{
+         height: 230px;
+
+      }
       .card-body{
          padding: 30px;
          text-align: center;

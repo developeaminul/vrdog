@@ -1,0 +1,106 @@
+#party{
+   padding: 30px 0px;
+   .game__contant{
+      h1{
+         font-size: 3rem;
+         font-weight: 700;
+         text-align: center;
+         color: $secondary__color;
+         font-family: $primary__font;
+         margin: 0px;
+
+      }
+      H2{
+         text-align: center;
+         font-size: 2rem;
+         font-weight: 700;
+         text-align: center;
+         color: #bfc4c4;
+         margin: 0px;
+         margin-top: 1rem;
+         font-family: $primary__font;
+      }
+      p{
+         font-size: 1.2rem;
+      }
+      .mm-4{
+         margin-top: -4px;
+      }
+      .mm-2{
+         margin-top: -2px;
+      }
+   }
+   .card{
+
+      border: 0px;
+      box-shadow: 0 28px 40px 0 rgba(0, 0, 0, .10);
+      // height: 500px;
+      margin: 15px 0px;
+
+      .card-body{
+         padding: 30px;
+         text-align: center;
+         // height: 200px;
+         .card-title{
+            font-size: 22px;
+            font-weight: 600;
+            font-family: $secondary__font;
+            color: $text__color;
+         }
+         .card-text{
+            font-size: 16px;
+            font-weight: 400;
+            font-family: $secondary__font;
+            color: $text__color;
+            // margin-bottom: 20px;
+         }
+         .btn__icon{
+            i{
+               font-size: 40px;
+               color: $text__color;
+            }
+         }
+
+         span{
+            font-size: 22px;
+            line-height: 20px;
+            font-weight: 600;
+            font-family: $secondary__font;
+            color: $text__color;
+           
+         }
+         h2{
+            font-size: 22px;
+            margin-top: 30px;
+            font-weight: 600;
+            font-family: $secondary__font;
+            color: $text__color;
+            
+         }
+         .price-2{
+            font-size: 22px;
+            line-height: 20px;
+            font-weight: 600;
+            font-family: $secondary__font;
+            color: $text__color;
+            margin-bottom: 30px;
+           
+         }
+         ul{
+            padding: 0px;
+            margin: 0px;
+            li{
+               font-size: 16px;
+               font-weight: 400;
+               font-family: $secondary__font;
+               color: $text__color;
+            }
+         }
+         a.main-btn{
+            font-size: 14px;
+            padding: 7px 30px;
+            margin-top: 30px;
+         }
+      }
+   }
+}
