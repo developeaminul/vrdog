@@ -478,10 +478,10 @@ a:hover {
   background: transparent;
 }
 
-.game__area, .game__area-2 {
+.game__area {
   padding: 30px 0px;
 }
-.game__area .game__contant h1, .game__area-2 .game__contant h1 {
+.game__area .game__contant h1 {
   font-size: 3rem;
   font-weight: 700;
   text-align: center;
@@ -489,7 +489,7 @@ a:hover {
   font-family: var(--primary__font);
   margin: 0px;
 }
-.game__area .game__contant H2, .game__area-2 .game__contant H2 {
+.game__area .game__contant H2 {
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
@@ -499,55 +499,62 @@ a:hover {
   margin-top: 1rem;
   font-family: var(--primary__font);
 }
-.game__area .game__contant p, .game__area-2 .game__contant p {
+.game__area .game__contant p {
   font-size: 1.2rem;
 }
-.game__area .game__contant .mm-4, .game__area-2 .game__contant .mm-4 {
+.game__area .game__contant .mm-4 {
   margin-top: -4px;
 }
-.game__area .game__contant .mm-2, .game__area-2 .game__contant .mm-2 {
+.game__area .game__contant .mm-2 {
   margin-top: -2px;
 }
-.game__area .card, .game__area-2 .card {
+.game__area a {
+  width: 100%;
+}
+.game__area .card {
   border: 0px;
   box-shadow: 0 28px 40px 0 rgba(0, 0, 0, 0.1);
   margin: 15px 0px;
+  height: 500px;
 }
-.game__area .card .card-body, .game__area-2 .card .card-body {
+.game__area .card img.card-img-top {
+  height: 230px;
+}
+.game__area .card .card-body {
   padding: 30px;
   text-align: center;
 }
-.game__area .card .card-body .card-title, .game__area-2 .card .card-body .card-title {
+.game__area .card .card-body .card-title {
   font-size: 22px;
   font-weight: 600;
   font-family: var(--secondary__font);
   color: var(--text__color);
 }
-.game__area .card .card-body .card-text, .game__area-2 .card .card-body .card-text {
+.game__area .card .card-body .card-text {
   font-size: 16px;
   font-weight: 400;
   font-family: var(--secondary__font);
   color: var(--text__color);
 }
-.game__area .card .card-body .btn__icon i, .game__area-2 .card .card-body .btn__icon i {
+.game__area .card .card-body .btn__icon i {
   font-size: 40px;
   color: var(--text__color);
 }
-.game__area .card .card-body span, .game__area-2 .card .card-body span {
+.game__area .card .card-body span {
   font-size: 22px;
   line-height: 20px;
   font-weight: 600;
   font-family: var(--secondary__font);
   color: var(--text__color);
 }
-.game__area .card .card-body h2, .game__area-2 .card .card-body h2 {
+.game__area .card .card-body h2 {
   font-size: 22px;
   margin-top: 30px;
   font-weight: 600;
   font-family: var(--secondary__font);
   color: var(--text__color);
 }
-.game__area .card .card-body .price-2, .game__area-2 .card .card-body .price-2 {
+.game__area .card .card-body .price-2 {
   font-size: 22px;
   line-height: 20px;
   font-weight: 600;
@@ -555,17 +562,17 @@ a:hover {
   color: var(--text__color);
   margin-bottom: 30px;
 }
-.game__area .card .card-body ul, .game__area-2 .card .card-body ul {
+.game__area .card .card-body ul {
   padding: 0px;
   margin: 0px;
 }
-.game__area .card .card-body ul li, .game__area-2 .card .card-body ul li {
+.game__area .card .card-body ul li {
   font-size: 16px;
   font-weight: 400;
   font-family: var(--secondary__font);
   color: var(--text__color);
 }
-.game__area .card .card-body a.main-btn, .game__area-2 .card .card-body a.main-btn {
+.game__area .card .card-body a.main-btn {
   font-size: 14px;
   padding: 7px 30px;
   margin-top: 30px;
@@ -845,6 +852,99 @@ a:hover {
   transform: translateY(-96%);
   opacity: 1;
   visibility: visible;
+}
+
+#party {
+  padding: 30px 0px;
+}
+#party .game__contant h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--secondary__color);
+  font-family: var(--primary__font);
+  margin: 0px;
+}
+#party .game__contant H2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #bfc4c4;
+  margin: 0px;
+  margin-top: 1rem;
+  font-family: var(--primary__font);
+}
+#party .game__contant p {
+  font-size: 1.2rem;
+}
+#party .game__contant .mm-4 {
+  margin-top: -4px;
+}
+#party .game__contant .mm-2 {
+  margin-top: -2px;
+}
+#party .card {
+  border: 0px;
+  box-shadow: 0 28px 40px 0 rgba(0, 0, 0, 0.1);
+  margin: 15px 0px;
+}
+#party .card .card-body {
+  padding: 30px;
+  text-align: center;
+}
+#party .card .card-body .card-title {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: var(--secondary__font);
+  color: var(--text__color);
+}
+#party .card .card-body .card-text {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--secondary__font);
+  color: var(--text__color);
+}
+#party .card .card-body .btn__icon i {
+  font-size: 40px;
+  color: var(--text__color);
+}
+#party .card .card-body span {
+  font-size: 22px;
+  line-height: 20px;
+  font-weight: 600;
+  font-family: var(--secondary__font);
+  color: var(--text__color);
+}
+#party .card .card-body h2 {
+  font-size: 22px;
+  margin-top: 30px;
+  font-weight: 600;
+  font-family: var(--secondary__font);
+  color: var(--text__color);
+}
+#party .card .card-body .price-2 {
+  font-size: 22px;
+  line-height: 20px;
+  font-weight: 600;
+  font-family: var(--secondary__font);
+  color: var(--text__color);
+  margin-bottom: 30px;
+}
+#party .card .card-body ul {
+  padding: 0px;
+  margin: 0px;
+}
+#party .card .card-body ul li {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--secondary__font);
+  color: var(--text__color);
+}
+#party .card .card-body a.main-btn {
+  font-size: 14px;
+  padding: 7px 30px;
+  margin-top: 30px;
 }
 
 .section-privacy {
