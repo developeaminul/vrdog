@@ -7,21 +7,36 @@ const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 
 const Page3 = () => {
 
-    const { formValues, timeAndCost, dispatch } = React.useContext(AppContext);
+    const { formValues, validForm, timeAndCost, dispatch } = React.useContext(AppContext);
     const [hasCoupon, setHasCoupon] = React.useState(false)
 
     const handleCoupon = () => {
         setHasCoupon(old => !old)
     }
+    const isValid = (data) => {
+        const {
+            email = null,
+            fname = null,
+            lname = null,
+            birthDay = null,
+            birthMonth = null,
+            birthYear = null,
+            phone = null,
+            reservationName = null,
+            agree = null
+        } = data
+
+        return !!(email && fname && lname && birthDay && birthMonth && birthYear && phone && reservationName && agree)
+    }
     const handleChange = e => {
+        e.preventDefault()
         const { value, name } = e.target;
         const newData = formValues;
         newData[name] = value;
 
-        dispatch('SET_FORM_VALUES', newData)
-        console.log('set', formValues);
+        dispatch('SET_VALID_FORM', isValid(newData))
     }
-   
+
     return (
         <div className="step3-details">
 

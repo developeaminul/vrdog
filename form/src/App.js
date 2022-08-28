@@ -16,8 +16,9 @@ function App() {
 	const [selectedTime, setSelectedTime] = useState('');
 	const [selectedPeople, setSelectedPeople] = useState(null);
 	const [timeAndCost, setTimeAndCost] = useState('');
-	const [activeStep, setActiveStep] = React.useState(0);
-	const [formValues, setFormValues] = React.useState({})
+	const [activeStep, setActiveStep] = useState(0);
+	const [formValues, setFormValues] = useState({})
+	const [validForm, setValidForm] = useState(false)
 
 	const dispatch = (actionType, value) => {
 		switch (actionType) {
@@ -45,6 +46,9 @@ function App() {
 			case 'SET_FORM_VALUES':
 				setFormValues(value);
 				return;
+			case 'SET_VALID_FORM':
+				setValidForm(value);
+				return;
 			default:
 				return;
 		}
@@ -52,7 +56,10 @@ function App() {
 
 	return (
 		<div className="form-main">
-			<AppContext.Provider value={{ games, selectedGame, selectedDate, selectedTime, selectedPeople, timeAndCost, formValues, dispatch, activeStep }}>
+			<AppContext.Provider value={{
+				games, selectedGame, selectedDate, selectedTime, selectedPeople,
+				timeAndCost, formValues, validForm, dispatch, activeStep
+			}}>
 				<Header />
 				<Pages />
 
