@@ -18,21 +18,22 @@ const Footer = () => {
     console.log(formValues);
     useEffect(() => {
         console.log('dsadsa');
-    }, [formValues])
+    }, [formValues, selectedPeople])
     const isValid = () => {
+        console.log(formValues);
         const {
-            email,
-            fname,
-            lname,
-            birthDay,
-            birthMonth,
-            birthYear,
-            phone,
-            reservationName,
-            agree
+            email = null,
+            fname = null,
+            lname = null,
+            birthDay = null,
+            birthMonth = null,
+            birthYear = null,
+            phone = null,
+            reservationName = null,
+            agree =null
         } = formValues
 
-        console.log(formValues);
+       
 
         return email && fname && lname && birthDay && birthMonth && birthYear && phone && reservationName && agree
     }

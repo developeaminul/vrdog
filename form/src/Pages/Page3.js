@@ -7,9 +7,8 @@ const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 
 const Page3 = () => {
 
-    const [loading, setLoading] = React.useState(false)
-    const [hasCoupon, setHasCoupon] = React.useState(false)
     const { formValues, timeAndCost, dispatch } = React.useContext(AppContext);
+    const [hasCoupon, setHasCoupon] = React.useState(false)
 
     const handleCoupon = () => {
         setHasCoupon(old => !old)
