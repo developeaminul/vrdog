@@ -35,11 +35,14 @@
   color: #eb645d;
   font-weight: 700;
 }
-.vrdog__slider_swiper .vrdog__slider .swiper-wrapper .swiper-slide .side-imag .slide-content h2 {
+.vrdog__slider_swiper .vrdog__slider .swiper-wrapper .swiper-slide .side-imag .slide-content h2, .vrdog__slider_swiper .vrdog__slider .swiper-wrapper .swiper-slide .side-imag .slide-content h3 {
   font-size: 2rem;
   color: #202020;
   font-weight: 700;
   margin-bottom: 20px;
+}
+.vrdog__slider_swiper .vrdog__slider .swiper-wrapper .swiper-slide .side-imag .slide-content h3 {
+  color: #fdfdfd;
 }
 .vrdog__slider_swiper .vrdog__slider .swiper-wrapper .swiper-slide-active {
   transition: 0.7s ease 0s 1 normal forwards;

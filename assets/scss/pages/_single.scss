@@ -25,16 +25,24 @@
             letter-spacing: -0.03em;
             font-weight: 800 ;
          }
-         .banner-image{
-            .cover-image{
-               height: 100% t;
-               width: 100% ;
-               object-fit: cover;
-               left: 0;
-               top: 0;
-            }
-           
+
+      }
+      .banner-image{
+         height: 100%;
+         max-width: 100% ;
+         max-height: 500px !important;
+         width: 100%;
+         img.cover-image.img-fluid.rounded-2 {
+            object-fit: cover;
+            left: 0;
+            top: 0;
+            height: 100%;
+            max-width: 100%;
+            max-height: 500px;
+            width: 100%;
          }
+      
+        
       }
 
    }
@@ -47,7 +55,6 @@
       margin-bottom: 80px;
       
    }
-
 
 }
 
