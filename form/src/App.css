@@ -202,7 +202,7 @@ body {
     background-position: calc(100% - 1.5rem) 50%;
     background-size: 20px;
     background-repeat: no-repeat;
-    padding: 10px 15px;
+    padding: 10px;
 }
 
 .step2-details .select-station-btn {

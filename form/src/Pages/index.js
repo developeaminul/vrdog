@@ -1,8 +1,7 @@
 import React from "react";
 import { AppContext } from "../context";
-import {Container } from '@mui/material';
 import Components from '../Components'
-const Pages = () => {
+const Pages = ({setFormValues}) => {
     const { activeStep } = React.useContext(AppContext);
     const CurrentPage = Components[activeStep]
     return (
@@ -12,7 +11,7 @@ const Pages = () => {
                 <h1 className="heading">Make Reservation</h1>
                 <h1 className="reservation-steps">Step {activeStep+1} of 3</h1>
                 <div className="page">
-                    <CurrentPage />
+                    <CurrentPage setFormValues={setFormValues} />
                 </div>
 
             </div>

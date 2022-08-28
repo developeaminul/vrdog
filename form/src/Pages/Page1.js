@@ -298,11 +298,10 @@ const Page1 = () => {
             return
         }
         setLoading(true)
-        fetch('https://api.springboardvr.com/v1/public/widget/f8f42930-5d9c-11ec-aa4a-3db00c01fc40')
+        fetch('./data.json')
             .then(res => res.json())
             .then(data => {
                 setLoading(false)
-                console.log(data);
                 dispatch('ADD_GAMES', data?.experiences || []);
             })
             .catch(e => setLoading(false))
@@ -310,7 +309,6 @@ const Page1 = () => {
 
     const handleSelectGame = (value) => {
         dispatch('SET_GAME', value);
-        console.log(selectedGame);
         setDates(demoDates)
     }
    

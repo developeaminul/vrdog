@@ -7,7 +7,7 @@ const convertDate = (date) => {
 }
 
 const Footer = () => {
-    const { timeAndCost, selectedPeople, selectedTime, selectedDate, selectedGame, activeStep, formValues, dispatch } = React.useContext(AppContext);
+    const { timeAndCost, selectedPeople, selectedTime, selectedDate, selectedGame, activeStep, validForm, dispatch } = React.useContext(AppContext);
     const availableNextStep = selectedGame && selectedDate && selectedTime;
     const handleContinue = () => {
         if (activeStep > 1) {
@@ -15,28 +15,8 @@ const Footer = () => {
         }
         dispatch('SET_STEP', (activeStep + 1))
     }
-    console.log(formValues);
-    useEffect(() => {
-        console.log('dsadsa');
-    }, [formValues, selectedPeople])
-    const isValid = () => {
-        console.log(formValues);
-        const {
-            email = null,
-            fname = null,
-            lname = null,
-            birthDay = null,
-            birthMonth = null,
-            birthYear = null,
-            phone = null,
-            reservationName = null,
-            agree =null
-        } = formValues
-
-       
-
-        return email && fname && lname && birthDay && birthMonth && birthYear && phone && reservationName && agree
-    }
+ 
+    
     return (
         <div className="footer-container">
 
@@ -74,7 +54,7 @@ const Footer = () => {
                 {activeStep !== 2 ?
                     <button className="footer-btn continue" disabled={!availableNextStep} onClick={handleContinue}>Continue</button>
                     :
-                    <button disabled={!isValid()} className="footer-btn payment">Continue to payment</button>}
+                    <button disabled={!validForm} className="footer-btn payment">Continue to payment</button>}
             </div>
 
         </div>

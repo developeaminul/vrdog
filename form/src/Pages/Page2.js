@@ -1,13 +1,11 @@
 import * as React from 'react';
 
 import { AppContext } from '../context';
-import ReactLoading from 'react-loading';
 import Loading from '../Loading';
-import { Button, Container } from '@mui/material';
 const Page2 = () => {
 
     const [loading, setLoading] = React.useState(false)
-    const { selectedPeople, timeAndCost, dispatch } = React.useContext(AppContext);
+    const {formValues, selectedPeople, timeAndCost, dispatch } = React.useContext(AppContext);
 
     const fetchTimeAndCost = () => {
         setLoading(true)
