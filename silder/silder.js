@@ -29,7 +29,7 @@
 
 
 var slider1 = new Swiper(".vrdog__slider", {
-  effect: "cube",
+  effect: "fade",
   slidesPerView: 1,
   spaceBetween: 30,
   centeredSlides: true,

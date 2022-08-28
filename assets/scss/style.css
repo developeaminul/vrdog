@@ -986,13 +986,21 @@ a:hover {
   letter-spacing: -0.03em;
   font-weight: 800;
 }
-.single-banner .gutter-spacious .spacing .banner-image .cover-image {
-  height: 100% t;
+.single-banner .gutter-spacious .banner-image {
+  height: 100%;
+  max-width: 100%;
+  max-height: 500px !important;
   width: 100%;
+}
+.single-banner .gutter-spacious .banner-image img.cover-image.img-fluid.rounded-2 {
   -o-object-fit: cover;
      object-fit: cover;
   left: 0;
   top: 0;
+  height: 100%;
+  max-width: 100%;
+  max-height: 500px;
+  width: 100%;
 }
 .single-banner .img-position {
   width: 100%;
